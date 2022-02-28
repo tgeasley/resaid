@@ -1,0 +1,14 @@
+{% set data = load_setup_py_data() %}
+
+package:
+  name: resaid
+  version: 0.0.3
+
+about:
+  summary: Package to assist in reservoir engineering calculations
+
+
+source:
+  path: ..
+build:
+  script: python setup.py install
